@@ -1,0 +1,1 @@
+export const photo_qr_link = "https://www.joinswsh.com/album/j2zz1a0dzela";
