@@ -23,7 +23,7 @@ const Header = () => {
   return <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo / Couple Names */}
-        <Link to="/" className="font-serif text-xl font-medium tracking-wide text-foreground">TODO: ADD LOGO</Link>
+        <Link to="/"><img src="/src/resources/logo.png" alt="Logo" className="h-8" /></Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">

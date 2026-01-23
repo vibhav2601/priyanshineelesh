@@ -16,13 +16,13 @@ const Explore = () => {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
-        <section className="container mx-auto px-4 py-16 md:py-24">
+        <section className="container mx-auto px-4 py-16 md:py-24 bg-primary-background">
           {/* Section Header */}
           <div className="mx-auto mb-12 max-w-2xl text-center">
-            <h1 className="font-serif text-3xl font-medium text-foreground sm:text-4xl md:text-5xl">
+            <h1 className="font-serif text-3xl font-medium text-white sm:text-4xl md:text-5xl">
               Explore Lucknow
             </h1>
-            <p className="mt-4 text-muted-foreground">
+            <p className="mt-4 text-white">
               Discover the best of Lucknow — from legendary food spots to 
               historic monuments. Here are our top recommendations for making 
               the most of your visit.
@@ -46,7 +46,7 @@ const Explore = () => {
 
           {/* Empty State */}
           {filteredPlaces.length === 0 && (
-            <p className="text-center text-muted-foreground">
+            <p className="text-center text-secondary-pink">
               No places found in this category.
             </p>
           )}

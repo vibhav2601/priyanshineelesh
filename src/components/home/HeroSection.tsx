@@ -12,13 +12,13 @@ const HeroSection = () => {
       </p>
 
       {/* Couple Names */}
-      <h1 className="font-serif text-5xl font-medium tracking-wide sm:text-6xl md:text-7xl lg:text-8xl text-primary-foreground">Priyanshi & Neelesh<span className="font-light italic text-rose-300">&</span> Sahil
+      <h1 className="font-serif text-5xl font-medium tracking-wide sm:text-6xl md:text-7xl lg:text-8xl text-primary-foreground">Priyanshi <span className="font-light italic text-rose-300">&</span> Neelesh
       </h1>
 
       {/* Date */}
       <div className="mt-8 flex flex-col items-center gap-2">
         <div className="h-px w-8 bg-border" />
-        <p className="font-serif text-xl sm:text-2xl text-primary-foreground">February 20, 2025</p>
+        <p className="font-serif text-xl sm:text-2xl text-primary-foreground">February 20, 2026</p>
         <div className="flex items-center gap-2 text-muted-foreground">
           <MapPin className="h-4 w-4" />
           <span className="text-sm font-medium">Lucknow, India</span>
@@ -33,19 +33,19 @@ const HeroSection = () => {
 
       {/* CTA Buttons */}
       <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:gap-4">
-        <Button asChild variant="default" size="lg" className="gap-2">
+        <Button asChild size="lg" className="gap-2 bg-white text-black hover:bg-[#fda4af] hover:text-black">
           <Link to="/explore">
             <MapPin className="h-4 w-4" />
             Explore Lucknow
           </Link>
         </Button>
-        <Button asChild variant="outline" size="lg" className="gap-2">
+        <Button asChild size="lg" className="gap-2 bg-white text-black hover:bg-[#fda4af] hover:text-black border border-input">
           <Link to="/photos">
             <Camera className="h-4 w-4" />
             Share Photos
           </Link>
         </Button>
-        <Button asChild variant="ghost" size="lg" className="gap-2">
+        <Button asChild size="lg" className="gap-2 bg-white text-black hover:bg-[#fda4af] hover:text-black">
           <Link to="/contact">
             <Mail className="h-4 w-4" />
             Contact Us
