@@ -1,13 +1,9 @@
 import { Heart } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="border-t border-border/40 bg-secondary/30">
+  return <footer className="border-t border-border/40 bg-secondary/30">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center gap-4 text-center">
-          <span className="font-serif text-lg font-medium text-foreground">
-            A & S
-          </span>
+          <span className="font-serif text-lg font-medium text-foreground">TODO: ADD LOGO</span>
           <p className="text-sm text-muted-foreground">
             January 2025 • Lucknow
           </p>
@@ -17,8 +13,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

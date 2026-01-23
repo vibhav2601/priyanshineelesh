@@ -3,43 +3,33 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-
-const navLinks = [
-  { name: "Home", path: "/" },
-  { name: "Explore Lucknow", path: "/explore" },
-  { name: "Photos", path: "/photos" },
-  { name: "Contact", path: "/contact" },
-];
-
+const navLinks = [{
+  name: "Home",
+  path: "/"
+}, {
+  name: "Explore Lucknow",
+  path: "/explore"
+}, {
+  name: "Photos",
+  path: "/photos"
+}, {
+  name: "Contact",
+  path: "/contact"
+}];
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-
   const isActive = (path: string) => location.pathname === path;
-
-  return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+  return <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo / Couple Names */}
-        <Link to="/" className="font-serif text-xl font-medium tracking-wide text-foreground">
-          A & S
-        </Link>
+        <Link to="/" className="font-serif text-xl font-medium tracking-wide text-foreground">TODO: ADD LOGO</Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                isActive(link.path)
-                  ? "text-primary"
-                  : "text-muted-foreground"
-              }`}
-            >
+          {navLinks.map(link => <Link key={link.path} to={link.path} className={`text-sm font-medium transition-colors hover:text-primary ${isActive(link.path) ? "text-primary" : "text-muted-foreground"}`}>
               {link.name}
-            </Link>
-          ))}
+            </Link>)}
         </nav>
 
         {/* Mobile Navigation */}
@@ -55,27 +45,14 @@ const Header = () => {
                 A & S
               </span>
               <nav className="flex flex-col gap-4">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.path}
-                    to={link.path}
-                    onClick={() => setIsOpen(false)}
-                    className={`text-base font-medium transition-colors hover:text-primary ${
-                      isActive(link.path)
-                        ? "text-primary"
-                        : "text-muted-foreground"
-                    }`}
-                  >
+                {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => setIsOpen(false)} className={`text-base font-medium transition-colors hover:text-primary ${isActive(link.path) ? "text-primary" : "text-muted-foreground"}`}>
                     {link.name}
-                  </Link>
-                ))}
+                  </Link>)}
               </nav>
             </div>
           </SheetContent>
         </Sheet>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;

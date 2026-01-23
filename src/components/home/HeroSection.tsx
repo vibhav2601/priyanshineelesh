@@ -1,29 +1,24 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MapPin, Camera, Mail } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center px-4 py-16 text-center">
+  return <section className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center px-4 py-16 text-center bg-red-950">
       {/* Decorative top line */}
       <div className="mb-8 h-px w-16 bg-primary/40" />
 
       {/* Welcome text */}
-      <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-muted-foreground">
+      <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-primary-foreground">
         We're getting married
       </p>
 
       {/* Couple Names */}
-      <h1 className="font-serif text-5xl font-medium tracking-wide text-foreground sm:text-6xl md:text-7xl lg:text-8xl">
-        Aanya <span className="font-light italic text-primary">&</span> Sahil
+      <h1 className="font-serif text-5xl font-medium tracking-wide sm:text-6xl md:text-7xl lg:text-8xl text-primary-foreground">Priyanshi & Neelesh<span className="font-light italic text-rose-300">&</span> Sahil
       </h1>
 
       {/* Date */}
       <div className="mt-8 flex flex-col items-center gap-2">
         <div className="h-px w-8 bg-border" />
-        <p className="font-serif text-xl text-foreground sm:text-2xl">
-          January 15, 2025
-        </p>
+        <p className="font-serif text-xl sm:text-2xl text-primary-foreground">February 20, 2025</p>
         <div className="flex items-center gap-2 text-muted-foreground">
           <MapPin className="h-4 w-4" />
           <span className="text-sm font-medium">Lucknow, India</span>
@@ -60,8 +55,6 @@ const HeroSection = () => {
 
       {/* Decorative bottom line */}
       <div className="mt-12 h-px w-16 bg-primary/40" />
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
