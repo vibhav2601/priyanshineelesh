@@ -3,11 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Redirecting...</title>
-  <script>
-    sessionStorage.redirect = location.href;
+  <script type="text/javascript">
+    // Save the current URL to session storage
+    sessionStorage.setItem('redirect', location.href);
+    // Redirect to the base index.html
+    window.location.replace('/priyanshineelesh/index.html');
   </script>
-  <meta http-equiv="refresh" content="0; URL=/priyanshineelesh/"></head>
+</head>
 <body>
-  If you are not redirected automatically, follow this <a href="/priyanshineelesh/">link</a>.
+  If you are not redirected automatically, follow this <a href="/priyanshineelesh/index.html">link</a>.
 </body>
 </html>
