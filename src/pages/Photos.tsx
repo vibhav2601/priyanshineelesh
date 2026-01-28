@@ -1,7 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { photo_qr_link } from "@/constants/links";
-import photosQrCode from "/public/resources/photos_qr.png";
+import photosQrCode from "@/resources/photos_qr.png";
 
 const Photos = () => {
   return (

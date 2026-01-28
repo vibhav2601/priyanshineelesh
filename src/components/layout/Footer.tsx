@@ -1,5 +1,5 @@
 import { Heart } from "lucide-react";
-import logo from "/public/resources/logo.png";
+import logo from "@/resources/logo.png";
 const Footer = () => {
   return <footer className="border-t border-border/40 bg-secondary/30">
       <div className="container mx-auto px-4 py-8">
