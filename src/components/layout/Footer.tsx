@@ -1,9 +1,10 @@
 import { Heart } from "lucide-react";
+import logo from "/public/resources/logo.png";
 const Footer = () => {
   return <footer className="border-t border-border/40 bg-secondary/30">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center gap-4 text-center">
-          <img src="/src/resources/logo.png" alt="Logo" className="h-24" />
+          <img src={logo} alt="Logo" className="h-24" />
           <p className="text-sm text-muted-foreground">
             February 2026 • Lucknow
           </p>

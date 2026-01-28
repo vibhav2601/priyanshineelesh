@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import logo from "/public/resources/logo.png";
 const navLinks = [{
   name: "Home",
   path: "/"
@@ -23,7 +24,7 @@ const Header = () => {
   return <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo / Couple Names */}
-        <Link to="/"><img src="/src/resources/logo.png" alt="Logo" className="h-8" /></Link>
+        <Link to="/"><img src={logo} alt="Logo" className="h-8" /></Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">

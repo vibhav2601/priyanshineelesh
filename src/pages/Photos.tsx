@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { photo_qr_link } from "@/constants/links";
+import photosQrCode from "/public/resources/photos_qr.png";
 
 const Photos = () => {
   return (
@@ -33,7 +34,7 @@ const Photos = () => {
               className="block relative"
             >
               <img 
-                src="/src/resources/photos_qr.png" 
+                src={photosQrCode} 
                 alt="Photo Upload QR Code" 
                 className="w-64 h-64 md:w-80 md:h-80 object-contain rounded-lg shadow-lg mx-auto"
               />
