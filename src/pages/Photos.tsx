@@ -1,7 +1,9 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { photo_qr_link } from "@/constants/links";
-import photosQrCode from "@/resources/photos_qr.png";
+
+const photosQrCodeUrl =
+  "https://raw.githubusercontent.com/vibhav2601/priyanshineelesh/main/src/resources/photos_qr.png";
 
 const Photos = () => {
   return (
@@ -26,7 +28,7 @@ const Photos = () => {
           </div>
 
           {/* Photo Upload CTA */}
-                    <div className="flex flex-col items-center justify-center gap-6">
+          <div className="flex flex-col items-center justify-center gap-6">
             <a 
               href={photo_qr_link} 
               target="_blank" 
@@ -34,7 +36,7 @@ const Photos = () => {
               className="block relative"
             >
               <img 
-                src={photosQrCode} 
+                src={photosQrCodeUrl} 
                 alt="Photo Upload QR Code" 
                 className="w-64 h-64 md:w-80 md:h-80 object-contain rounded-lg shadow-lg mx-auto"
               />
