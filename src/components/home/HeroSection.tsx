@@ -53,12 +53,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Welcome Message */}
-      <p className="mx-auto mt-10 max-w-md text-base text-muted-foreground">
-        We joyfully invite you to celebrate our wedding. Join us for a 
-        celebration of love, laughter, and new beginnings.
-      </p>
-
       {/* CTA Buttons */}
       <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:gap-4">
         <Button asChild size="lg" className="gap-2 bg-white text-black hover:bg-[#fda4af] hover:text-black">

@@ -23,7 +23,7 @@ const Photos = () => {
           <div className="mx-auto mt-8 max-w-2xl text-center">
             <p className="mt-4 text-lg text-white">
               We know you’re only here for your pics. Main character energy only 💅
-              So upload a selfie and let the site hunt down every photo that features your beautiful face.” 📸🔥
+              So upload a selfie and let the site hunt down every photo that features your beautiful face.
             </p>
           </div>
 
@@ -49,7 +49,6 @@ const Photos = () => {
               rel="noopener noreferrer"
               className="text-primary hover:underline text-lg font-medium"
             >
-              Click here to upload your photos!
             </a>
           </div>
 

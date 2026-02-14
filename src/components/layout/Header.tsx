@@ -17,7 +17,7 @@ const navLinks = [{
   name: "Photos",
   path: "/photos"
 }, {
-  name: "Contact",
+  name: "Important Information",
   path: "/contact"
 }];
 const Header = () => {
@@ -46,7 +46,7 @@ const Header = () => {
           <SheetContent side="right" className="w-[280px] bg-background">
             <div className="flex flex-col gap-6 pt-8">
               <span className="font-serif text-xl font-medium text-foreground">
-                A & S
+                P & N
               </span>
               <nav className="flex flex-col gap-4">
                 {navLinks.map(link => <Link key={link.path} to={link.path} onClick={() => setIsOpen(false)} className={`text-base font-medium transition-colors hover:text-primary ${isActive(link.path) ? "text-primary" : "text-muted-foreground"}`}>
