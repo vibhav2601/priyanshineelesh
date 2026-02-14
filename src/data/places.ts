@@ -1,4 +1,4 @@
-export type PlaceCategory = "food" | "culture" | "shopping" | "attractions";
+export type PlaceCategory = "food" | "culture" | "shopping";
 
 export interface Place {
   id: string;
@@ -91,29 +91,6 @@ export const places: Place[] = [
     category: "shopping",
     mapsLink: "https://maps.google.com/?q=Chowk+Lucknow",
   },
-
-  // Attractions
-  {
-    id: "ambedkar-park",
-    title: "Ambedkar Memorial Park",
-    description: "Stunning modern park with beautiful sandstone architecture and gardens.",
-    category: "attractions",
-    mapsLink: "https://maps.google.com/?q=Ambedkar+Memorial+Park+Lucknow",
-  },
-  {
-    id: "gomti-riverfront",
-    title: "Gomti Riverfront",
-    description: "Scenic waterfront promenade perfect for evening walks.",
-    category: "attractions",
-    mapsLink: "https://maps.google.com/?q=Gomti+Riverfront+Lucknow",
-  },
-  {
-    id: "lucknow-zoo",
-    title: "Lucknow Zoo",
-    description: "One of India's oldest zoos with diverse wildlife and heritage buildings.",
-    category: "attractions",
-    mapsLink: "https://maps.google.com/?q=Lucknow+Zoo",
-  },
 ];
 
 export const categories: { value: PlaceCategory | "all"; label: string }[] = [
@@ -121,5 +98,4 @@ export const categories: { value: PlaceCategory | "all"; label: string }[] = [
   { value: "food", label: "Food" },
   { value: "culture", label: "Culture" },
   { value: "shopping", label: "Shopping" },
-  { value: "attractions", label: "Attractions" },
 ];

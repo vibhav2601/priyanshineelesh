@@ -1,13 +1,11 @@
 import { Heart } from "lucide-react";
-
-const logoUrl =
-  "https://raw.githubusercontent.com/vibhav2601/priyanshineelesh/main/src/resources/logo.png";
+import secondaryLogo from "@/resources/logo_secondary_no_bg.jpeg";
 
 const Footer = () => {
   return <footer className="border-t border-border/40 bg-secondary/30">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center gap-4 text-center">
-          <img src={logoUrl} alt="Logo" className="h-24" />
+          <img src={secondaryLogo} alt="Secondary logo" className="h-24 w-auto rounded-md object-contain" />
           <p className="text-sm text-muted-foreground">
             February 2026 • Lucknow
           </p>
