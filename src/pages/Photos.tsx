@@ -14,14 +14,11 @@ const Photos = () => {
           {/* Section Header */}
           <div className="mx-auto mb-12 max-w-2xl text-center">
             <h1 className="font-serif text-3xl font-medium text-white sm:text-4xl md:text-5xl">
-              Upload & Save Your Memories
+              Tap on the QR
             </h1>
-            <h2 className="font-serif text-xl font-small text-white sm:text-2xl md:text-3xl">
-              Just tap on the QR
-            </h2>
           </div>
           <div className="mx-auto mt-8 max-w-2xl text-center">
-            <p className="mt-4 text-lg text-white">
+            <p className="mt-4 pb-6 text-md text-white">
               We know you’re only here for your pics. Main character energy only 💅
               So upload a selfie and let the site hunt down every photo that features your beautiful face.
             </p>
